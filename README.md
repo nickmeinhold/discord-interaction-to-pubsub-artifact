@@ -11,9 +11,31 @@ This is an `artifact project` that collects several `coede project`s as git subt
 Added with:
 
 ```sh
-git remote add -f discord_api_client https://github.com/enspyrco/discord_api_client
-git subtree add --prefix .subtree/discord_api_client discord_api_client main --squash
+git subtree add --prefix .subtree/discord_api_client git@github.com:enspyrco/discord_api_client.git main --squash
+```
+
+Update with:
+
+```sh
+git subtree pull --prefix .subtree/discord_api_client git@github.com:enspyrco/discord_api_client.git main --squash
 ```
 
 Usage:
 
+### discord_interaction_to_pubsub
+
+[repo](https://github.com/enspyrco/discord_interaction_to_pubsub)
+
+Added with:
+
+```sh
+git subtree add --prefix .subtree/discord_interaction_to_pubsub git@github.com:enspyrco/discord_interaction_to_pubsub.git main --squash
+```
+
+Update with:
+
+```sh
+git subtree pull --prefix .subtree/discord_interaction_to_pubsub git@github.com:enspyrco/discord_interaction_to_pubsub.git main --squash
+```
+
+Usage:
