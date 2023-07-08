@@ -14,10 +14,16 @@ Added with:
 git subtree add --prefix .subtree/discord_api_client git@github.com:enspyrco/discord_api_client.git main --squash
 ```
 
-Update with:
+Pull with:
 
 ```sh
 git subtree pull --prefix .subtree/discord_api_client git@github.com:enspyrco/discord_api_client.git main --squash
+```
+
+Push with:
+
+```sh
+git subtree push --prefix .subtree/discord_api_client git@github.com:enspyrco/discord_api_client.git main
 ```
 
 Usage:

@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "register_slash_command",
+      "cwd": "scripts/register_slash_command",
+      "request": "launch",
+      "type": "dart",
+      "program": "${workspaceFolder}/scripts/register_slash_command/main.dart"
+    }
+  ]
+}

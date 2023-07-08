@@ -1,0 +1,8 @@
+name: register_slash_command
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies: 
+  discord_api_client:
+    git: https://github.com/enspyrco/discord_api_client.git
