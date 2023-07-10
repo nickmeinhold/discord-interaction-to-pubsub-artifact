@@ -1,5 +1,4 @@
 import 'package:discord_api_client/discord_api_client.dart';
-import 'package:discord_api_client/src/api_client.dart';
 import 'package:test/test.dart';
 
 import 'credentials.dart';
@@ -62,7 +61,7 @@ void main() {
   }, skip: true);
 
   test('hello', () async {
-    final api = DiscordApi(
+    final api = DiscordClient(
         applicationId: applicationId,
         guildId: guildId,
         botToken: botToken,
