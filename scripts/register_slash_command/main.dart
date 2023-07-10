@@ -7,7 +7,7 @@ void main() async {
 }
 
 Future<void> createMessageCommand() async {
-  final api = DiscordApi(
+  final client = DiscordClient(
       applicationId: credentials.applicationId,
       guildId: credentials.guildId,
       botToken: credentials.botToken,
@@ -20,10 +20,10 @@ Future<void> createMessageCommand() async {
         'Enter a Notion page id to migrate into the current channel...',
   );
 
-  var response = await api.createCommand(command);
+  // var response = await api.createCommand(command);
 
   // var response = await api.deletCommand('...');
-  // var response = await api.getCommands();
+  var response = await client.getCommands();
 
   print(response.body);
 }

@@ -6,3 +6,6 @@ environment:
 dependencies: 
   discord_api_client:
     git: https://github.com/enspyrco/discord_api_client.git
+
+dev_dependencies:
+  enspyr_lints: ^0.0.0-a1
