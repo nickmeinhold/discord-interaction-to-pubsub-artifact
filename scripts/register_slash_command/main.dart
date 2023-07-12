@@ -3,27 +3,23 @@ import 'package:discord_api_client/discord_api_client.dart';
 import 'credentials.dart' as credentials;
 
 void main() async {
-  await createMessageCommand();
-}
-
-Future<void> createMessageCommand() async {
   final client = DiscordClient(
       applicationId: credentials.applicationId,
       guildId: credentials.guildId,
       botToken: credentials.botToken,
       version: 8);
 
-  var command = ApplicationCommand(
+  var slashCommand = ApplicationCommand(
     type: ApplicationCommandType.chatInput,
     name: 'migrate',
     description:
         'Enter a Notion page id to migrate into the current channel...',
   );
 
-  // var response = await api.createCommand(command);
+  var response = await client.createCommand(slashCommand);
 
+  // var response = await client.getCommands();
   // var response = await api.deletCommand('...');
-  var response = await client.getCommands();
 
   print(response.body);
 }
