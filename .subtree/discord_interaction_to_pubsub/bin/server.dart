@@ -30,7 +30,8 @@ Future<Response> handler(Request request) async {
       final PubSub pubsub =
           PubSub(client, Platform.environment['PROJECT_NAME']!);
 
-      final Topic topic = await pubsub.lookupTopic('dart-code-strings');
+      final Topic topic =
+          await pubsub.lookupTopic(Platform.environment['TOPIC_NAME']!);
 
       // We currently just re-encode the bodyJson
       // TODO: just use bodyString but add a test that it is the same as encooding and re-encoding
