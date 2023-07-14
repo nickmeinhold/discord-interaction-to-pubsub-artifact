@@ -40,4 +40,10 @@ Update with:
 git subtree pull --prefix .subtree/discord_interaction_to_pubsub git@github.com:enspyrco/discord_interaction_to_pubsub.git main --squash
 ```
 
+Push with:
+
+```sh
+git subtree push --prefix .subtree/discord_interaction_to_pubsub git@github.com:enspyrco/discord_interaction_to_pubsub.git main
+```
+
 Usage:
