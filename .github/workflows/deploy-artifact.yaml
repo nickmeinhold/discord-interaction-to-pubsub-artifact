@@ -1,4 +1,4 @@
-name: deploy-discord-interaction-to-pubsub
+name: deploy-artifact
 on:
   push:
 
@@ -42,5 +42,5 @@ jobs:
           context: .subtree/discord_interaction_to_pubsub/
           push: true
           tags: |
-             us-central1-docker.pkg.dev/migrate-notion-page-to-discord/discord-interaction-to-pubsub-repo/discord-interaction-to-pubsub-image:${{ steps.get-tag.outputs.short_ref }}
-             us-central1-docker.pkg.dev/migrate-notion-page-to-discord/discord-interaction-to-pubsub-repo/discord-interaction-to-pubsub-image:latest
+             us-central1-docker.pkg.dev/migrate-notion-page-to-discord/discord-interaction-to-pubsub-artifact-repo/discord-interaction-to-pubsub-artifact-image:${{ steps.get-tag.outputs.short_ref }}
+             us-central1-docker.pkg.dev/migrate-notion-page-to-discord/discord-interaction-to-pubsub-artifact-repo/discord-interaction-to-pubsub-artifact-image:latest
