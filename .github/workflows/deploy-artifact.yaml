@@ -21,8 +21,8 @@ jobs:
         uses: 'google-github-actions/auth@v1'
         with:
           token_format: access_token
-          workload_identity_provider: 'projects/215090409474/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
-          service_account: 'deploy-cloud-run@migrate-notion-page-to-discord.iam.gserviceaccount.com'
+          workload_identity_provider: 'projects/543139203885/locations/global/workloadIdentityPools/workload-id-pool/providers/workload-provider'
+          service_account: 'github-actions-sa@projects-monthly.iam.gserviceaccount.com'
           access_token_lifetime: 300s
       
       - name: Login to Artifact Registry
